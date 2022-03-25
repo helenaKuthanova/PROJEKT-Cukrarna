@@ -2,7 +2,6 @@
 html { box-sizing: border-box; }
 *, ::before, ::after { box-sizing: inherit; }
 
-
 /*
 	Poznámky:
 	- maximální šířka obsahu uvnitř sekcí je 1100px
@@ -28,8 +27,161 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
 body {
 	margin: 0;
+    font-size: 18px;
+    font-family: "Lora", sans-serif;
+    line-height: 1.5;
 }
 
+/*hlavička*/
+
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 1100px;
+}
+
+.menu {
+    display: flex;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 20px;
+    color: rgb(44, 44, 44);
+}
+
+.menu a:hover {
+    background-color: #d2567d;
+    color: white;
+}
+
+#logo {
+    width: 170px;
+}
+
+/*hero*/
+
+.nadpis {
+    background-image: url(images/cupcake.jpg);
+    background-size: cover;
+}
+
+.nadpisText {
+    color: white;
+    width: 1100px;
+    margin: 0 auto;
+    padding: 80px 40% 80px 0;
+}
+
+.nadpis h1 {
+    font-size: 52px;
+    font-family: "Playfair Display", sans-serif;
+    margin: 0 0 30px 0;
+}
+
+.nadpis p {
+    font-size: 24px;
+    font-style: italic;
+}
+
+/*sekce*/
+
+h2 {
+    font-size: 36px;
+    font-family: "Playfair Display", sans-serif;
+    color: #3e606b;
+    margin: 0;
+}
+
+img {
+    border-radius: 5px;
+}
+
+/*sekce Vítejte*/
+
+.vitejte {
+    display: flex;
+    margin: 80px auto;
+    width: 1100px;
+    align-items: center;
+}
+
+.vitejteText {
+    padding-right: 30px;
+}
+
+.vitejte .tlacitko {
+    display: inline-block;
+    background-color: #f195b2;
+    text-decoration: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 30px;
+}
+
+.vitejte .tlacitko:hover {
+    background-color: #d2567d;
+}
+
+/*sekce Dnešní nabídka*/
+
+.nabidka {
+    background-color: #c7c7c7;
+}
+
+.nabidkaText {
+    margin: 0 auto;
+    padding: 80px 0;
+    width: 1100px;
+}
+
+.produkty {
+    display: flex;
+    justify-content: space-between;
+}
+
+.produkty img {
+    width: 100%;
+}
+
+.produkty h3 {
+    font-size: 24px;
+    font-family: "Playfair Display", sans-serif;
+    color: #3e606b;
+}
+
+.polozka {
+    flex-basis: 22%;
+    text-align: center;
+}
+
+/*sekce Náš přístup*/
+
+.oNas {
+    display: flex;
+    margin: 80px auto;
+    width: 1100px;
+    align-items: center;
+}
+
+.vlevo img {
+    width: 530px;
+}
+
+.vpravo {
+    padding-left: 30px;
+}
+
+/*patička*/
+
+footer {
+    background-color: #303339;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
